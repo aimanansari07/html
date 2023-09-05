@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Required</title>
+</head>
+
+<body>
+    <h1>Required,novalidate,formnovalidate,formaction,formenctype</h1>
+    <form action="">
+        <h2>Required</h2>
+        Enter name:<input type="text" name="name" required>
+        <br>Enter city:<input type="text" name="city">
+        <br><input type="submit">
+    </form>
+    <hr>
+    <h1>novalidate</h1>
+    <form action="" novalidate>
+
+        Enter name:<input type="text" name="name">
+        <br>Enter city:<input type="text" name="city">
+        <br><input type="submit">
+    </form>
+    <hr>
+    <h1>formnovalidate</h1>
+    <form action="">
+
+        Enter name:<input type="text" name="name" formnovalidate>
+        <br>Enter city:<input type="text" name="city">
+        <br><input type="submit">
+    </form>
+    <hr>
+    <h1>formaction</h1>
+    <form action="">
+
+        Enter name:<input type="text" name="name" formnovalidate>
+        <br>Enter city:<input type="text" name="city">
+        <br><input type="submit" formaction="feedback form.html">
+    </form>
+    <hr>
+    <h1>formenctype</h1>
+
+    <form action="" enctype="application/x-www-form-urlencoded">
+
+     <b>upload photo:</b><input type="file" formenctype="multipart/form-data" accept=".jpg">
+        <br><input type="submit">
+    </form>
+
+
+
+
+</body>
+
+</html>
